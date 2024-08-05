@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg,#ddd,#eee);
+    display: grid;
+    place-content: center;
+}
+.container{
+    width: 350px;
+    max-height: 500px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(137, 43, 226, 0.288);
+    transition: all ease-in 0.4s;
+}
+.container .title{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    place-content: center;
+}
+.container .title .info{
+    font-size: 2em;
+    color:blueviolet;
+    transition: all ease-in 0.4s;
+    animation: anim1 linear 0.5s;
+}
+@keyframes anim1{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(359deg);
+    }
+}
+.container form{
+    width: 100%;
+    padding: 15px 40px;
+}
+.container form .form-field{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.container form .form-field label{
+    font-size: 14px;
+    font-weight: 550;
+}
+.container form .form-field .input-field{
+    width: 100%;
+    margin-top: 5px;
+    background: rgba(137, 43, 226, 0.469);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+.form-field .input-field i{
+    width: 10%;
+    text-align: center;
+    font-size: 1.3em;
+    color:blueviolet;
+}
+.form-field .input-field input{
+    width: 90%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+.container form .action-field{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}
+.container form .action-field .btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    background: white;
+    outline: none;
+    border: 2px solid blueviolet;
+    color:blueviolet;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+    font-weight: 550;
+}
+.container form .action-field .active{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    background: blueviolet;
+    outline: none;
+    border: 2px solid blueviolet;
+    color:white;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+    font-weight: 550;
+}
+#fullNameField{
+    transition: all ease-in 0.4s;
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+#confirmPasswordField{
+    transition: all ease-in 0.4s;
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0;
+}
